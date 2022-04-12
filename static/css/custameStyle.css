@@ -1,0 +1,27 @@
+.container{
+  width: 75%;
+  margin: auto;
+  text-align: center; 
+}
+.flex-box-container-2{
+    display: flex;
+    border: 1px rgb(39, 145, 18);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.flex-box-container-2 img{
+    margin: 6px;
+    padding: 4px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(52, 59, 71, 0.2);
+    /* border: 1px solid crimson; */
+}
+
+.flex-box-rps img:hover{
+  background-color: #0679fdc9;
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px rgba(87, 147, 252, 0.2);
+
+}
