@@ -76,7 +76,7 @@ function finalMessage([yourScore, computerScore]){
     if (yourScore === 0) {
         return {'message': 'You Lost!', 'color':'red'};
     }else if( yourScore === 0.5) {
-        return {'message':'You Tied!', 'color':'yellow'};
+        return {'message':'You Tied!', 'color':'orange'};
     }else{
         return{ 'message': 'You Won!', 'color':'green'};
     }
@@ -101,7 +101,7 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
     humanDiv.innerHTML = "<img src=' "+ imagesDatabase[humanImageChoice] + 
     " 'style='box-shadow: 0px 5px 20px rgba(87, 147, 252, 1);background-color: #0679fdc9; border-radius: 16px;'>"
     
-    messageDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 40px; padding:10px;'>" + finalMessage['message'] + "</h1>"
+    messageDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size:60px; padding:100px;'>" + finalMessage['message'] + "</h1>"
 
     botDiv.innerHTML = "<img src=' "+ imagesDatabase[botImageChoice] + 
     " 'style='box-shadow: 0px 5px 20px rgba(252, 14, 87, 1); background-color: #fd0658c9; border-radius: 16px;'>"
