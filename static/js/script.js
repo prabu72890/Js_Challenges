@@ -193,7 +193,7 @@ function randamCard() {
     return blackjackGame['cards'][randomIndex];
 };
 
-function showCard (activePlayer){
+function showCard (card, activePlayer){
     let cardImage = document.createElement('img');
     cardImage.src = `static/Cards/${card}.png`;
     document.querySelector(activePlayer['div']).appendChild(cardImage);
